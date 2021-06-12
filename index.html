@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usama.dev</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link id="theme-style" rel="stylesheet" href="" />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <header>
+        <div>
+          <h1 class="head-text">
+            &lt; Usama <span class="inHead">Sattar</span> / &gt;
+          </h1>
+          <div data-mode="dark" class="theme-dots" id="dark"></div>
+          <div data-mode="light" class="theme-dots" id="light"></div>
+        </div>
+      </header>
+      <div class="row" style="margin-top: 4rem">
+        <div class="col-12">
+          <p class="intro">
+            Hello, my name is Usama. <br />
+            I'm a frontend developer based in Pakistan.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 mt-5">
+        <span class="brackets"> ( ) </span>
+      </div>
+      <div class="col-12">
+        <h2 class="code-text mt-5">I bring code and design together,</h2>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h1 class="codeLeft" style="color: white">CO<br />DE</h1>
+        </div>
+        <div
+          class="d-none d-md-block col-1"
+          style="
+            margin-top: 20%;
+            transform: rotate(-8deg);
+            box-sizing: border-box;
+            padding-left: 40px;
+          "
+        >
+          <div
+            class="slash"
+            style="width: 12%; height: 4%; transform: scale(1, 58)"
+          ></div>
+        </div>
+        <div class="col-5 pl-0">
+          <h1 class="codeRight">DE<br />SIGN</h1>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <span class="brackets"> ( ) </span>
+      </div>
+      <div class="col-12 description mt-5">
+        I'm passionate about clean code and even cleaner design.<br />
+        Here are some works where I challenged myself . . .
+      </div>
+      <div class="row heroes">
+        <div class="col-4 spider">
+          <img src="" />
+        </div>
+        <div class="col-4 boost">
+          <img src="" />
+        </div>
+        <div class="col-4 book">
+          <img src="" />
+        </div>
+      </div>
+
+      <h1 class="boostText">Boost Up</h1>
+      <div class="col-12">
+        <span class="brackets"> ( ) </span>
+      </div>
+      <div class="col-12 mt-5">
+        <p class="description">
+          I've started frontend development for over two years now.<br />
+          I'm constantly in the process of learning. Over the past two years,<br />
+          I've worked hard to enhance my skills, using the following tools.
+        </p>
+      </div>
+      <div class="icons">
+        <img src="assets/html5.svg" />
+        <img src="assets/github.svg" />
+        <img src="assets/react.svg" />
+        <img src="assets/css3.svg" />
+        <img src="assets/javascript.svg" />
+      </div>
+
+      <div class="languages">
+        <span>React js</span>
+        <span>javascript</span>
+        <span>Html</span>
+        <span>CSS</span>
+        <span>Git/GitHub</span>
+      </div>
+      <div class="col-12 mt-5">
+        <span class="brackets"> ( ) </span>
+      </div>
+      <div
+        style="display: flex; justify-content: center; flex-wrap: wrap"
+        class="mt-5"
+      >
+        <img class="profile" src="assets/profile.jpg" />
+        <div class="email-text ml-5">
+          <h1 class="mail">iamusamasattar@gmail.com</h1>
+          <br />
+          <a
+            href="#"
+            style="
+              color: gray;
+              margin-top: 0%;
+              padding-top: 0%;
+              text-decoration: underline;
+            "
+            >Download Resume PDF</a
+          >
+        </div>
+      </div>
+
+      <footer class="col-12">
+        <div class="row justify-content-end footer">
+          <img src="" />
+          <img src="" />
+        </div>
+      </footer>
+    </main>
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        let themeBtn = document.getElementsByClassName("theme-dots");
+        let themeLink = document.getElementById("theme-style");
+        for (i = 0; i < themeBtn.length; i++) {
+          themeBtn[i].addEventListener("click", function () {
+            let theme = this.getAttribute("data-mode");
+            console.log(theme);
+            changeTheme(theme);
+          });
+        }
+        function changeTheme(theme) {
+          if (theme === "light") {
+            themeLink.href = "css/light.css";
+          } else if (theme === "dark") {
+            themeLink.href = "css/dark.css";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
